@@ -21,7 +21,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Attach click event to remove the task
         removeButton.onclick = () => {
-            taskList.removeChild(listItem); // Remove the list item from the task list
+            listItem.classList.add('fade-out');
+            setTimeout(() => {
+                taskList.removeChild(listItem); // Remove the list item after the fade-out
+            }, 300);
         };
 
         listItem.appendChild(removeButton); // Append the remove button to the list item

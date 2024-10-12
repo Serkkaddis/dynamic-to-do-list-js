@@ -66,3 +66,7 @@ li {
 .remove-btn:hover {
     background-color: #d9534f;
 }
+.fade-out {
+    opacity: 0; /* Make the item transparent */
+    transition: opacity 0.3s ease; /* Smooth transition */
+}
